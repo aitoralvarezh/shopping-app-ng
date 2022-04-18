@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div>
+            <a href="#" class="navbar-brand">Recipe Book</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse d-flex justify-content-between">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" routerLink="" (click)="onSelect('recipe')">Recipes</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="shop" (click)="onSelect('shopping-list')">Shopping List</a></li>
+            </ul>
+            <div ngbDropdown class="dropdown navbar-nav">
+                <a ngbDropdownToggle class="dropdown-toggle nav-item  nav-link" role="button">Manage <span class="caret"></span></a>
+                <ul ngbDropdownMenu class="dropdown-menu">
+                    <li><a ngbDropdownItem class="dropdown-item" href="#">Save Data</a></li>
+                    <li><a ngbDropdownItem class="dropdown-item" href="#">Fetch Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
